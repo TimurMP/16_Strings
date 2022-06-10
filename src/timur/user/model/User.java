@@ -49,7 +49,7 @@ public class User {
             return false;
         }
 
-        if (email.lastIndexOf('.') >= email.length() - 3) {
+        if (email.lastIndexOf('.') >= email.length() - 2) {
             return false;
         }
         for (int i = 0; i < email.length(); i++) {
