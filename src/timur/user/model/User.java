@@ -54,8 +54,7 @@ public class User {
         }
         for (int i = 0; i < email.length(); i++) {
             char c = email.charAt(i);
-            if (!(Character.isAlphabetic(c) || Character.isDigit(c) || c == '_'
-                    || c == '-' || c == '.' || c == '@')) {
+            if (!(Character.isAlphabetic(c) || Character.isDigit(c) || c == '_' || c == '-' || c == '.' || c == '@')) {
                 return false;
             }
         }
