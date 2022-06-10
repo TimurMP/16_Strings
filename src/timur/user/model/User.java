@@ -23,15 +23,19 @@ public class User {
             char c = password.charAt(i);
             if (Character.isUpperCase(c)) {
                 isUppercase = true;
+                continue;
             }
             if (Character.isLowerCase(c)) {
                 isLowercase = true;
+                continue;
             }
             if (Character.isDigit(c)) {
                 isDigit = true;
+                continue;
             }
             if (c == '@' || c == '!' || c == '%' || c == '*' || c == '&') {
                 isSpecialSymbol = true;
+
             }
 
         }
